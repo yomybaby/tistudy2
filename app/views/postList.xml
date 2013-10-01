@@ -1,8 +1,14 @@
 <Alloy>
 	<Window  class="container">
 		<ListView>
+			<Templates>
+				<ItemTemplate name="rightTitle">
+					<Label id="rightLabel" bindId="titleLabel"></Label>
+				</ItemTemplate>
+			</Templates>
 			<ListSection>
 				<ListItem title="title"></ListItem>
+				<ListItem template="rightTitle" titleLabel:text="right?"></ListItem>
 			</ListSection>
 		</ListView>
 	</Window>

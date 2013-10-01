@@ -2,3 +2,7 @@
 ".container" : {
   
 }
+
+"#rightLabel" : {
+	right : 10
+}
