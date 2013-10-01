@@ -1,14 +1,17 @@
 <Alloy>
+	<Collection src="post"></Collection>
 	<Window  class="container">
-		<ListView>
+		<ListView id="listView">
 			<Templates>
-				<ItemTemplate name="rightTitle">
+				<ItemTemplate name="rightTpl">
 					<Label id="rightLabel" bindId="titleLabel"></Label>
 				</ItemTemplate>
+				<ItemTemplate name="leftTpl">
+					<Label left="10" id="leftLabel" bindId="titleLabel"></Label>
+				</ItemTemplate>
 			</Templates>
-			<ListSection>
-				<ListItem title="title"></ListItem>
-				<ListItem template="rightTitle" titleLabel:text="right?"></ListItem>
+			<ListSection dataCollection="post" dataTransform="doTransform">
+				<ListItem itemId="{id}" template="{template}" titleLabel:text="{title}"></ListItem>
 			</ListSection>
 		</ListView>
 	</Window>
