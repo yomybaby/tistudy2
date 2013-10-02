@@ -9,9 +9,8 @@
 					<Label right="0" bindId="label">Right!</Label>
 				</ItemTemplate>
 			</Templates>
-			<ListSection>
-				<ListItem template="leftTpl" label:text="New Left"></ListItem>
-				<ListItem template="rightTpl" label:text="New Right"></ListItem>
+			<ListSection dataCollection="myPostCol" dataTransform="doTrans">
+				<ListItem template="{template}" label:text="{title}"></ListItem>
 			</ListSection>
 		</ListView>
 	</Window>
