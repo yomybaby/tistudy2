@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container">
+		<TextArea id="ta"></TextArea>
+		<TextArea id="content"></TextArea>
+	</Window>
+</Alloy>

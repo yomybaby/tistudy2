@@ -1,6 +1,6 @@
 <Alloy>
 	<Window class="container">
-		<ListView>
+		<ListView id="listView">
 			<Templates>
 				<ItemTemplate name="leftTpl">
 					<Label bindId="label">Left!</Label>
@@ -10,8 +10,9 @@
 				</ItemTemplate>
 			</Templates>
 			<ListSection dataCollection="myPostCol" dataTransform="doTrans">
-				<ListItem template="{template}" label:text="{title}"></ListItem>
+				<ListItem itemId="{id}" template="{template}" label:text="{title}"></ListItem>
 			</ListSection>
 		</ListView>
+		<Button title="Write" id="writeBtn"></Button>
 	</Window>
 </Alloy>

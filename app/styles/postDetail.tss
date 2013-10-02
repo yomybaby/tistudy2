@@ -1,0 +1,12 @@
+".container" : {
+	backgroundColor : 'white',
+	layout : 'vertical'  
+}
+
+"TextArea" : {
+	left : 10,
+	right : 10,
+	top: 10,
+	borderColor : 'red',
+	borderWidth : 2	
+}
